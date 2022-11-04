@@ -23,7 +23,7 @@ Example e2e tests (some of which are slightly silly) written in [Testcafe](https
 
 ## Run in Browserstack.
 * Enter the browserstack username and access key in `export_env.sh` file
-* Run `sh export_env.sh` to set the environment variables from bash script.
+* Run `source export_env.sh` to set the environment variables from bash script.
 * run `npm run browserstack_chrome` to run tests in browserstack.
 * You can check the build running in Browserstack Automate Dashboard.
 
