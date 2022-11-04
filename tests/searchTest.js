@@ -1,5 +1,6 @@
 import homePage from '../pages/homePage'
 
+
 fixture`Search`.beforeEach(async t => {
   await homePage.goto()
 })

@@ -1,15 +1,16 @@
-import { Selector as $, t } from 'testcafe'
+import { t } from 'testcafe'
 import basePage from './basePage'
 import search from './searchModule'
+import XPathSelector from '../utilities/xpath-selector'
 
 const homePage = {
   url: '',
   // include modules...
   search,
-  posts: $('.post-title'),
-  siteTitle: $('h1'),
-  githubLink: $('#github-social'),
-  loadMoreBtn: $('#load-more'),
+  posts: XPathSelector("//h2[@class='post-title']"),
+  siteTitle: XPathSelector("//h1"),
+  loadMoreBtn: XPathSelector("//button[@id='load-more']"),
+  titleAnchor: XPathSelector("//a"),
 
   /**
    * test if post title exists
@@ -17,7 +18,7 @@ const homePage = {
    * @return {bool}
    */
   async postTitleExists (postTitle) {
-    return await $('a').withText(postTitle).exists
+    return await this.titleAnchor.withText(postTitle).exists
   },
 
   /**

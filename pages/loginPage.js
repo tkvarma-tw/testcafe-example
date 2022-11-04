@@ -1,12 +1,13 @@
-import { Selector as $, t } from 'testcafe'
+import { t } from 'testcafe'
 import basePage from './basePage'
+import XPathSelector from '../utilities/xpath-selector'
 
 const loginPage = {
   url: 'login/',
-  usernameInput: $('#username'),
-  passwordInput: $('#password'),
-  loginBtn: $('#login'),
-  errorMsg: $('#errorMessage'),
+  usernameInput: XPathSelector("//input[@id='username']"),
+  passwordInput: XPathSelector("//input[@id='password']"),
+  loginBtn: XPathSelector("//button[@id='login']"),
+  errorMsg: XPathSelector("//div[@id='errorMessage']"),
 
   async login (username, password) {
     await t

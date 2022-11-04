@@ -1,0 +1,6 @@
+export BROWSERSTACK_USERNAME="tusharvarma_qp2OyZ"
+export BROWSERSTACK_ACCESS_KEY="s1iKvzoYkyKHGYviivzB"
+export BROWSERSTACK_USE_AUTOMATE="1"
+export BROWSERSTACK_CAPABILITIES_CONFIG_PATH="${PWD}/browserstack-config.json"
+export BROWSERSTACK_BUILD_ID="Test Build `date +%Y%m%d%H%M%S`"
+echo $BROWSERSTACK_BUILD_ID
