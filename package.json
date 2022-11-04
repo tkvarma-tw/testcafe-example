@@ -19,7 +19,7 @@
     "safari": "npm run testcafe safari tests/",
     "firefox": "npm run testcafe firefox tests/",
     "browsers": "npm run testcafe -- -b browserstack",
-    "chrome": "npm run testcafe 'browserstack:chrome@106.0:Windows 11' tests/",
+    "browserstack_chrome": "npm run testcafe 'browserstack:chrome@106.0:Windows 11' tests/",
     "pretty": "npx standard --fix"
   },
   "author": "Brine",

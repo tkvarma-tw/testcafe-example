@@ -12,14 +12,20 @@ Example e2e tests (some of which are slightly silly) written in [Testcafe](https
 - run tests on [BrowserStack](https://browserstack.com)
 
 ## Setup
-1. clone `clone git@github.com:qualityshepherd/testcafe-example.git`
-2. install `npm i`
+1. clone `clone git@github.com:tkvarma-tw/testcafe-example.git`
+2. install `npm install`
 
 ## Run
 * run `npm test` to watch in browser, or
 * `npm run all` to run parallel, headless, on Chrome and Firefox or
 * `npm run browserstack` to run tests in the cloud (requires an account and env keys to be set)
 * `npm run` to see more options
+
+## Run in Browserstack.
+* Enter the browserstack username and access key in `export_env.sh` file
+* Run `sh export_env.sh` to set the environment variables from bash script.
+* run `npm run browserstack_chrome` to run tests in browserstack.
+* You can check the build running in Browserstack Automate Dashboard.
 
 ---
 
